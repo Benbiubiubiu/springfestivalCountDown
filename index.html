@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年春节倒计时</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部灯笼装饰 -->
+    <div class="lantern lantern-left">
+        <div class="lantern-rope"></div>
+        <div class="lantern-body">
+            <div class="lantern-text">春</div>
+        </div>
+        <div class="lantern-tassel"></div>
+    </div>
+    <div class="lantern lantern-right">
+        <div class="lantern-rope"></div>
+        <div class="lantern-body">
+            <div class="lantern-text">福</div>
+        </div>
+        <div class="lantern-tassel"></div>
+    </div>
+
+    <!-- 鞭炮效果 -->
+    <div class="firecrackers firecrackers-left">
+        <div class="firecracker"></div>
+        <div class="firecracker"></div>
+        <div class="firecracker"></div>
+    </div>
+    <div class="firecrackers firecrackers-right">
+        <div class="firecracker"></div>
+        <div class="firecracker"></div>
+        <div class="firecracker"></div>
+    </div>
+
+    <!-- 飘落的红纸屑 -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🧧 2026年春节倒计时 🧧</h1>
+            <p class="subtitle">农历丙午年（马年）正月初一</p>
+            <p class="date">2026年2月17日</p>
+            <div class="decoration-line">
+                <span>✨</span>
+                <span>🏮</span>
+                <span>🎆</span>
+                <span>🧨</span>
+                <span>🎉</span>
+            </div>
+        </div>
+
+        <div class="countdown-box">
+            <div class="countdown-item">
+                <div class="countdown-value" id="days">00</div>
+                <div class="countdown-label">天</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="hours">00</div>
+                <div class="countdown-label">时</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="minutes">00</div>
+                <div class="countdown-label">分</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="seconds">00</div>
+                <div class="countdown-label">秒</div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <p>距离2026年春节还有 <span id="totalDays" class="highlight">0</span> 天</p>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="footer">
+            <p>🎉 恭喜发财，万事如意 🎉</p>
+            <div class="wishes">
+                <span>🌸 新年快乐</span>
+                <span>🧨 阖家幸福</span>
+                <span>🎊 吉祥如意</span>
+                <span>🏮 事业有成</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

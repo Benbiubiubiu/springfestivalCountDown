@@ -356,7 +356,7 @@ body::before {
     align-items: center;
     gap: 15px;
     margin: 40px 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .countdown-item {
@@ -364,6 +364,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     min-width: 80px;
+    flex-shrink: 0;
 }
 
 .countdown-value {
@@ -556,10 +557,15 @@ body::before {
         font-size: 0.9em;
     }
 
+    .countdown-box {
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
     .countdown-value {
         font-size: 2.5em;
         padding: 15px 20px;
-        min-width: 80px;
+        min-width: 70px;
     }
 
     .countdown-label {
@@ -568,6 +574,7 @@ body::before {
 
     .countdown-separator {
         font-size: 2.5em;
+        margin: 0 5px;
     }
 
     .info-box {
@@ -586,14 +593,29 @@ body::before {
     .footer {
         font-size: 0.9em;
     }
+
+    .wishes {
+        gap: 8px;
+    }
+
+    .wishes span {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 400px) {
     .countdown-box {
-        gap: 10px;
+        gap: 5px;
     }
 
     .countdown-separator {
-        margin: 0 5px;
+        margin: 0 3px;
+    }
+
+    .countdown-value {
+        font-size: 2em;
+        padding: 12px 15px;
+        min-width: 60px;
     }
 }
